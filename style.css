@@ -1,0 +1,129 @@
+body {
+    display: grid;
+    grid-template-columns: 7% 93%;
+    grid-template-rows: 10vh auto;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.side-bar-left {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.side-bar-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.sub-header-top {
+    grid-column: 2;
+    /* Second column */
+    grid-row: 1;
+    /* First row */
+    max-height: 10vh;
+    width: 100%;
+    /* Automatically fill available space */
+    background-color: rgba(74, 38, 11, 0.75);
+}
+
+.rota-dashboard {
+    grid-column: 2;
+    /* Second column */
+    grid-row: 2;
+    /* Second row */
+    background-color: rgba(153, 141, 141, 0.45);
+    min-height: 100%;
+    width: 100%;
+    /* Automatically fill available space */
+    overflow: auto;
+    display: flex;
+}
+
+.staff-list {
+    width: 25%;
+    background-color: rgb(81, 81, 81);
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.staff-box {
+    width: 98%;
+    height: 50px;
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 2px solid red;
+    margin-top: 2px;
+}
+
+.staff-box img {
+    height: 90%;
+    width: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.calender-view {
+    width: 75%;
+    background-color: aliceblue;
+    min-height: 100%;
+}
+
+.calendar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.date-range {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.calendar-days-box{
+    display: block;
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-top: 1px solid #ddd;
+}
+
+.day {
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #fdfdfd;
+}
+
+.day:last-child {
+    border-right: none;
+}
+
+.day:hover {
+    background-color: #f0f0f0;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heathrow VIP Meet & Assist</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="side-bar-left">
+        <img src="./imgs/viplogo.png" alt="">
+    </div>
+    <div class="sub-header-top"></div>
+    <div class="rota-dashboard">
+        <div class="staff-list">
+            <div class="staff-box">
+                <img src="./imgs/person.png" alt="">
+            </div>
+        </div>
+        <div class="calender-view">
+            <div class="calendar-header">
+                <div class="date-range">
+                    <button class="nav-btn" id="prev-week">&laquo;</button>
+                    <span id="date-range-display">10 Feb 2022 – 16 Feb 2022</span>
+                    <button class="nav-btn" id="next-week">&raquo;</button>
+                </div>
+            </div>
+            <div class="calender-days-box">
+                <div class="calendar-days" id="calendar-days">
+                    <!-- Days will be dynamically inserted here -->
+                </div>
+            </div>
+            <div class="calendar-days" id="calendar-days">
+                <!-- Days will be dynamically inserted here -->
+            </div>
+
+            <script src="calender-script.js"></script>
+
+        </div>
+    </div>
+</body>
+
+</html>
